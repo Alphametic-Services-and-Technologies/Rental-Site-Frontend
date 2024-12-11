@@ -1,0 +1,168 @@
+.about-us-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 112px;
+}
+
+.about-us-container {
+  width: 1320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-us-first-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-us-first-section h1 {
+  color: #fff;
+  text-wrap: wrap;
+  font-size: 48px;
+  margin: 0 0 30px;
+  font-weight: 500;
+}
+
+.about-us-first-section p {
+  font-size: 14px;
+  margin: 0 0 48px;
+}
+
+.about-us-second-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  row-gap: 0.5rem;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  object-fit: cover;
+  border-radius: 10px;
+  height: 150px;
+}
+
+.about-us-second-section div div::before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  background-color: #0000004a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.about-us-second-section div:first-child div:first-child::before {
+  width: 150px;
+  content: "Ukraine";
+}
+
+.about-us-second-section div:first-child div:last-child::before {
+  content: "Norway";
+  width: 230px;
+}
+
+.about-us-second-section div:last-child div:first-child::before {
+  content: "Portugal";
+  width: 230px;
+}
+.about-us-second-section div:last-child div:last-child::before {
+  content: "Brazil";
+  width: 150px;
+}
+
+.about-us-second-section div:first-child div:last-child::after {
+  content: "8.9% Appreciation";
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  top: -10%;
+  left: 70%;
+  transform: translateX(-50%);
+  background-color: #356df6;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  border-radius: 20px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.about-us-second-section div:last-child div:first-child::after {
+  content: "10.2% Rent Yield";
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  bottom: -10%;
+  right: 70%;
+  transform: translateX(50%);
+  background-color: #356df6;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  border-radius: 20px;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media only screen and (max-width: 786px) {
+  .about-us-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    row-gap: 3rem;
+  }
+
+  .about-us-first-section {
+    width: 100%;
+  }
+
+  .about-us-second-section {
+    width: 100%;
+  }
+}

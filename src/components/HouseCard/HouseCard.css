@@ -1,0 +1,62 @@
+.card-container {
+  position: relative;
+  width: 235px;
+  height: 335px;
+  padding: 8px;
+  background-color: #1b1f33 !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.card-container-img {
+  width: 230px !important;
+  height: 205px !important;
+}
+
+.card-container h4 {
+  font-size: 20px;
+  color: #fff;
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+.card-container p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.info-container {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.time-bid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.time-bid-container h5 {
+  color: #fff;
+  font-size: 14.4px;
+  margin: 0 0 8px;
+}
+
+.time-bid-container p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.heart-button {
+  position: absolute !important;
+  background-color: rgb(18 20 32 / 65%) !important;
+  /* padding: 10px !;
+  border-radius: 50%; */
+  top: 15px !important;
+  right: 15px !important;
+  z-index: 99999 !important;
+}

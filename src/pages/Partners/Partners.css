@@ -1,0 +1,27 @@
+.partners-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 112px;
+}
+
+.partners-container {
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 786px) {
+  .partners-container {
+    width: auto;
+    overflow-x: auto;
+    column-gap: 5rem;
+    padding: 0 15px;
+  }
+
+  .partners-container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+}

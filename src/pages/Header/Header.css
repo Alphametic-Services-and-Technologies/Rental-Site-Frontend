@@ -1,0 +1,119 @@
+.header-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.header-container {
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-container h1 {
+  font-size: 62px;
+  text-wrap: wrap;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.title-container p {
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.usage-numbers-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-main-container {
+  margin-right: 180px;
+  position: relative;
+  transform: translateX(-50%);
+  width: fit-content;
+  display: flex;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.card-main-container .card-container:first-child {
+  left: -25px;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+}
+
+.card-main-container .card-container:last-child {
+  position: absolute;
+  top: 25px;
+  right: -180px;
+  box-shadow: -3px -4px 11px 5px #00000059;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+
+@media only screen and (max-width: 786px) {
+  .header-main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .title-container {
+    width: 100%;
+    margin-bottom: 16px;
+    padding-left: 30px;
+  }
+
+  .title-container h1 {
+    font-size: 40px;
+  }
+
+  .card-main-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    transform: none; /* Remove transform for centered alignment */
+  }
+
+  .card-main-container .card-container:first-child {
+    left: 40px;
+  }
+
+  .card-main-container .card-container:last-child {
+    top: 25px;
+    right: -110px;
+  }
+}
