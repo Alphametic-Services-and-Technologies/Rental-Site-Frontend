@@ -1,0 +1,139 @@
+.navbar-main-container {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 1320px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-link-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-right: 3rem;
+}
+
+.nav-link {
+  color: white;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+  color: #a8a8a8;
+}
+
+.navbar-button-container {
+  width: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  background-color: var(--gray-150);
+  margin-right: 100px;
+}
+
+.navbar-main-container .navbar-container div .fa-heart {
+  color: white;
+  font-size: 24px;
+  position: relative;
+  margin-right: 3rem;
+}
+
+.navbar-main-container .navbar-container div .fa-heart::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25%;
+  height: 25%;
+  top: 5px;
+  right: 3px;
+  background-color: red;
+  border: 3px solid #121420;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+}
+
+.navbar-menu-container {
+  display: none;
+}
+
+.navbar-second-link-container {
+  display: none;
+}
+
+@media only screen and (max-width: 786px) {
+  .navbar-main-container {
+    flex-direction: column;
+  }
+  .navbar-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    order: 1;
+  }
+
+  .navbar-link-container {
+    display: none;
+  }
+
+  .navbar-button-container {
+    width: auto;
+  }
+
+  .navbar-container span {
+    display: none;
+  }
+
+  .nav-button {
+    display: none !important;
+  }
+
+  .navbar-main-container .navbar-container div .fa-heart {
+    order: 0;
+    margin: 0;
+  }
+
+  .navbar-menu-container {
+    display: block;
+    order: 2;
+  }
+
+  .navbar-second-link-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

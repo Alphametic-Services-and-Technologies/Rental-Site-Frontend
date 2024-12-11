@@ -1,0 +1,36 @@
+.join-card-container {
+  width: 230px !important;
+  height: 330px !important;
+  border: 1px solid #3d4467 !important;
+  background: none !important;
+  padding: 24px 16px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.join-card-container h2 {
+  font-size: 24px;
+  margin: 0 0 48px;
+}
+
+.join-card-image {
+  width: 204px !important;
+  height: 68px !important;
+}
+
+.join-card-content {
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.join-card-content h1 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  margin: 45px 0 24px 0;
+}
+
+.join-card-content p {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}

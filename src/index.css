@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121420;
+  overflow-x: hidden;
+}
+
+:root {
+  --gray-150: #3d4467;
+}
+
+.gray-50 {
+  color: #c3c5ce;
+}
+
+.gray-90 {
+  color: #5e6379;
+}
+
+.gray-100 {
+  color: #545b79;
+}
+
+.bg-black-100 {
+  background-color: #1b1f33;
+}
+
+.title {
+  width: fit-content;
+  max-width: 710px;
+  margin: 0 0 30px;
+  font-size: 48px;
+  color: white;
+}
